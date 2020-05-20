@@ -75,21 +75,30 @@
 }
 
 @keyframes fill-green-circle {
-  100% {
+  from {
+    fill: white;
+  }
+  to {
     fill: #7CB342;
     opacity: 1.0;
   }
 }
 
 @keyframes fill-red-circle {
-  100% {
+  from {
+    fill: white;
+  }
+  to {
     fill: #FF6245;
     opacity: 1.0;
   }
 }
 
 @keyframes fill-yellow-circle {
-  100% {
+  from {
+    fill: white;
+  }
+  to {
     fill: #FFC107;
     opacity: 1.0;
   }
@@ -125,11 +134,11 @@
 }
 
 .cross .first-line {
-  animation: 0.7s draw-first-line ease-out, 0.7s draw-white-line 1.5s both;
+  animation: 0.7s draw-first-line ease-out, 0.7s draw-white-line 1.5s forwards;
 }
 
 .cross .second-line {
-  animation: 0.7s draw-second-line ease-out, 0.7s draw-white-line 1.5s both;
+  animation: 0.7s draw-second-line ease-out, 0.7s draw-white-line 1.5s forwards;
 }
 
 @keyframes draw-first-line {
@@ -182,7 +191,7 @@
   left: 68px;
   width: 15px;
   height: 70px;
-  animation: 0.7s alert-sign-bounce cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.7s draw-white-line 1.5s both;
+  animation: 0.7s alert-sign-bounce cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.7s draw-white-line 1.5s forwards;
 }
 
 .alert-sign .dot {
