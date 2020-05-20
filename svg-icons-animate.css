@@ -72,10 +72,6 @@
 }
 
 @keyframes fill-green-circle {
-  80% {
-    fill: #7CB342;
-    opacity: 0.5;
-  }
   100% {
     fill: #7CB342;
     opacity: 1.0;
@@ -83,10 +79,6 @@
 }
 
 @keyframes fill-red-circle {
-  80% {
-    fill: #FF6245;
-    opacity: 0.5;
-  }
   100% {
     fill: #FF6245;
     opacity: 1.0;
