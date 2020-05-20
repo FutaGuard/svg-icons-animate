@@ -28,7 +28,6 @@
   stroke-dashoffset: 0;
   stroke-linecap: round;
   opacity: 0.4;
-  animation: 0.7s draw-circle ease-out;
 }
 
 .circular.green-stroke circle.path {
@@ -37,6 +36,10 @@
 
 .circular.red-stroke circle.path {
   animation: 0.7s draw-circle ease-out, 0.7s fill-red-circle 1.5s both;
+}
+
+.circular.yellow-stroke circle.path {
+  animation: 0.7s draw-circle ease-out, 0.7s fill-yellow-circle 1.5s both;
 }
 
 /*------- Checkmark ---------*/
@@ -81,6 +84,13 @@
 @keyframes fill-red-circle {
   100% {
     fill: #FF6245;
+    opacity: 1.0;
+  }
+}
+
+@keyframes fill-yellow-circle {
+  100% {
+    fill: #FFC107;
     opacity: 1.0;
   }
 }
@@ -158,6 +168,12 @@
   }
 }
 
+@keyframes draw-white-dot {
+  100% {
+    fill: white;
+  }
+}
+
 .alert-sign {
   stroke-width: 6.25;
   stroke-linecap: round;
@@ -166,12 +182,13 @@
   left: 68px;
   width: 15px;
   height: 70px;
-  animation: 0.5s alert-sign-bounce cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: 0.7s alert-sign-bounce cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.7s draw-white-line 1.5s both;
 }
 
 .alert-sign .dot {
   stroke: none;
   fill: #FFC107;
+  animation: 0.7s draw-white-dot 1.5s both;
 }
 
 @keyframes alert-sign-bounce {
