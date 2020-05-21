@@ -167,12 +167,12 @@
     stroke-dashoffset: 1;
   }
   50% {
-    stroke-dasharray: 0, 55;
+    stroke-dasharray: 55, 0;
     stroke-dashoffset: 1;
   }
   100% {
     stroke-dasharray: 55, 0;
-    stroke-dashoffset: 70;
+    stroke-dashoffset: 1;
   }
 }
 
